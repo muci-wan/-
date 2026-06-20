@@ -1,11 +1,10 @@
 site_name: 个人笔记
 site_description: 我的个人知识库
-site_url: https://muci-wan.github.io/notebook
+site_url: https://muci-wan.github.io/-
 
 repo_name: muci-wan/-
 repo_url: https://github.com/muci-wan/-
 
-# 主题配置
 theme:
   name: material
   language: zh
@@ -28,19 +27,16 @@ theme:
     - search.suggest
     - search.highlight
 
-# 导航
 nav:
   - 首页: index.md
   - 笔记:
     - 2026年:
       - 6月: notes/2026/06/20.md
 
-# 插件
 plugins:
   - search:
       lang: zh
 
-# Markdown 扩展
 markdown_extensions:
   - admonition
   - pymdownx.details
