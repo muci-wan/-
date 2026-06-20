@@ -1,0 +1,32 @@
+name: 部署 MkDocs
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装依赖
+        run: |
+          pip install mkdocs-material
+
+      - name: 构建站点
+        run: mkdocs build
+
+      - name: 部署到 GitHub Pages
+        run: |
+          mkdocs gh-deploy --force
