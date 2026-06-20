@@ -1,0 +1,53 @@
+site_name: 个人笔记
+site_description: 我的个人知识库
+site_url: https://muci-wan.github.io/notebook
+
+repo_name: muci-wan/-
+repo_url: https://github.com/muci-wan/-
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+  features:
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+# 导航
+nav:
+  - 首页: index.md
+  - 笔记:
+    - 2026年:
+      - 6月: notes/2026/06/20.md
+
+# 插件
+plugins:
+  - search:
+      lang: zh
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
