@@ -1,9 +1,9 @@
 site_name: 个人笔记
 site_description: 我的个人知识库
-site_url: https://muci-wan.github.io/-
+site_url: https://muci-wan.github.io/notebook
 
-repo_name: muci-wan/-
-repo_url: https://github.com/muci-wan/-
+repo_name: muci-wan/notebook
+repo_url: https://github.com/muci-wan/notebook
 
 theme:
   name: material
@@ -32,6 +32,14 @@ nav:
   - 笔记:
     - 2026年:
       - 6月: notes/2026/06/20.md
+  - MySQL:
+    - 目录: mysql/index.md
+    - 01-基础与DDL: mysql/01-基础与DDL.md
+    - 02-DML与查询: mysql/02-DML与查询.md
+    - 03-索引与优化: mysql/03-索引与优化.md
+    - 04-事务与锁: mysql/04-事务与锁.md
+    - 05-高级特性: mysql/05-高级特性.md
+    - 06-运维管理: mysql/06-运维管理.md
 
 plugins:
   - search:
